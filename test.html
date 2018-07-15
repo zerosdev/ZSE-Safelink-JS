@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ZSE Test Page</title>
+	</head>
+	<body>
+		Link Count : <span id="link-count">0</span><br/><br/>
+		This link will be converted : <a target="_blank" href="http://www.facebook.com/zerostechnology">Zeros Technology Center</a>
+		<br/><br/>
+		This link will NOT be converted : <a target="_blank" href="http://www.zeros.co.id">Zeros Dev</a>
+
+		<br/><br/>
+		*Inspect element to see the source
+
+		<script src="ZSE.min.js"></script>
+		<script>
+
+			// initialize ZSE with your safelink url
+			ZSE.safeURL("http://your-safelink.com/out?to=")
+
+				// add some URL that should not be converted (array)
+				.except(['zeros.co.id'])
+
+				// 0 to disable safelink cookie, you can put 1, 5, 10 or other (in minute)
+				.cookie(0)
+
+				// Run engine
+				.run();
+
+			document.getElementById("link-count").innerHTML = ZSE.linkCount();
+
+		</script>
+	</body>
+</html>
