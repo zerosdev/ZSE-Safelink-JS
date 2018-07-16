@@ -77,5 +77,8 @@ Run / execute engine
 
 # Change Logs
 
-v1.0 [15-07-2018]
+== v1.0.1 [16-07-2018]
+- Fix cookie management issue
+
+== v1.0.0 [15-07-2018] ==
 - Initial release
