@@ -21,8 +21,11 @@
 				// add some URL that should not be converted (array)
 				.except(['zeros.co.id'])
 
-				// 0 to disable safelink cookie, you can put 1, 5, 10 or other (in minute)
-				.cookie(0)
+				// 0 to disable delay, you can put 1, 5, 10 or other (in minute)
+				.delay(0)
+			
+				// add repetition (count, interval)
+				.repeat(2, 60)
 
 				// Run engine
 				.run();
