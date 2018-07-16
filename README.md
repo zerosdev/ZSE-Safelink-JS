@@ -22,10 +22,10 @@ This is proof of how easy this library is :
 
 ZSE.safelink(&#x22;http://your-safelink.com/go?url=&#x22;)
 
-// add some urls that should NOT be converted
+// add some domains that should NOT be converted
 .except(['zeros.co.id'])
 
-// or add some urls that should be converted
+// or add some domains that should be converted
 .only(['facebook.com'])
 
 // set for the cookie lifetime in minute, put 0 to disable cookie (all links will always be converted)
