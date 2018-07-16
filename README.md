@@ -42,22 +42,22 @@ ZSE.safelink(&#x22;http://your-safelink.com/go?url=&#x22;)
 <b>.safelink()</b>
 
 Define your safelink URL. This option must have value. if not, error will be thrown for example :
-<b>.safelink('https://your-safelink.com/go?url=')</b>
+<pre><code>.safelink('https://your-safelink.com/go?url=')</code></pre>
 
 <b>.except()</b>
 
 Add some domains that SHOULD NOT be converted. This option should have an array value for example :
-<b>.except(['facebook.com','youtube.com','zeros.co.id'])</b>
+<pre><code>.except(['facebook.com','youtube.com','zeros.co.id'])</code></pre>
 
 <b>.only()</b>
 
 Add some domains that SHOULD BE converted. This option should have an array value for example :
-<b>.only(['twitter.com','github.com'])</b>
+<pre><code>.only(['twitter.com','github.com'])</code></pre>
 
 <b>.cookie()</b>
 
 Enable / disable cookie lifetime for safelink (in minute). 0 = disable = all links will always be converted. Default value is <b>5</b> minute for example:
-<b>.cookie(15)</b>
+<pre><code>.cookie(15)</code></pre>
 
 <b>.linkCount()</b>
 
