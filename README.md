@@ -50,3 +50,16 @@ ZSE.safelink(&#x22;http://your-safelink.com/go?url=&#x22;)
 <b>.linkCount()</b> : get link count form current page (return Integer)
 
 <b>.run()</b> : run the engine
+
+
+# Note
+
+1. If there is an error, this engine will not be executed and error message will appear in your browser's console.
+2. This code is open for public development
+3. This code is distributed under MIT License, you can redistribute this code WITHOUT removing or changing creator's credit
+
+
+# Change Logs
+
+v1.0 [15-07-2018]
+- Initial release
