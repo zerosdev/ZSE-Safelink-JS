@@ -21,18 +21,10 @@ This is proof of how easy this library is :
 <pre><code>&#x3C;script&#x3E;
 
 ZSE.safelink(&#x22;http://your-safelink.com/go?url=&#x22;)
-
-// add some domains that should NOT be converted
-.except(['zeros.co.id'])
-
-// or add some domains that should be converted
-.only(['facebook.com'])
-
-// set for the cookie lifetime in minute, put 0 to disable cookie (all links will always be converted)
-.cookie(0)
-
-// run engine
-.run();
+  .except(['zeros.co.id'])
+  .delay(1)
+  .repeat(5, 60)
+  .run();
 
 &#x3C;/script&#x3E;
 </code></pre>
@@ -56,10 +48,15 @@ Add some domains that SHOULD NOT be converted. This option should have an array 
 Add some domains that SHOULD BE converted. This option should have an array value. For example :
 <pre><code>.only(['twitter.com','github.com'])</code></pre>
 
-<b>.cookie()</b>
+<b>.delay()</b>
 
-Enable / disable cookie lifetime for safelink (in minute). 0 = disable = all links will always be converted. Default value is <b>5</b> minute. For example:
-<pre><code>.cookie(15)</code></pre>
+Enable / disable delay for safelink (in minute). 0 = disable = all links will always be converted. Default value is <b>5</b> minute. For example:
+<pre><code>.delay(15)</code></pre>
+
+<b>.repeat()</b>
+
+Add custom repetition. If this method not configured, the conversion will always executed. For example to repeat safelink conversion 3 times every 60 minutes :
+<pre><code>.repeat(3, 60)</code></pre>
 
 <b>.linkCount()</b>
 
@@ -78,6 +75,9 @@ Run / execute engine
 
 
 # Change Logs
+
+== v1.1.0 [16-07-2018] ==
+- Add repetition system
 
 == v1.0.1 [16-07-2018] ==
 - Fix cookie management issue
