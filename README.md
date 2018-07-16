@@ -14,7 +14,7 @@ This library also has cookie management, so you can decide to keep your visitors
 This is proof of how easy this library is :
 
 1. You need to include the main library into your bottom of every page you want to enable safelink (above of &lt;/body&gt; tag)
-<pre><code>&#x3C;script src=&#x22;ZSE.min.js&#x22;&#x3E;&#x3C;/script&#x3E;</code></pre>
+<pre><code>&#x3C;script src=&#x22;/path/to/your/ZSE.min.js&#x22;&#x3E;&#x3C;/script&#x3E;</code></pre>
 
 2. Start for setting up your safelink
 
@@ -36,6 +36,8 @@ ZSE.safelink(&#x22;http://your-safelink.com/go?url=&#x22;)
 
 &#x3C;/script&#x3E;
 </code></pre>
+
+3. You're ready to go!
 
 # Available Options
 
