@@ -18,13 +18,13 @@
 			// initialize ZSE with your safelink url
 			ZSE.safelink("http://your-safelink.com/out?to=")
 
-				// add some URL that should not be converted (array)
+				// add some domains that should NOT be converted (array)
 				.except(['zeros.co.id'])
 
 				// 0 to disable delay, you can put 1, 5, 10 or other (in minute)
 				.delay(0)
 			
-				// add repetition (count, interval)
+				// add repetition (count, interval in minute)
 				.repeat(2, 60)
 
 				// Run engine
